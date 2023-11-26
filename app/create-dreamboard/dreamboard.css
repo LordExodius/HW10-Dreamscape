@@ -1,0 +1,163 @@
+.waitingRoom-page {
+  padding-top: 10px; /* Adjust this value based on the actual height of your navbar */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: white;
+}
+
+/* justify-content: flex-start; */
+.waitingRoom-page .waiting-stat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.waitingRoom-page .gptChat {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.waitingRoom-page .gptChat .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.waitingRoom-page .gptChat .chatarea {
+  height: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+.waitingRoom-page .gptChat .chatarea .generate-button {
+  background-color: blue;
+  color: white; /* Optional: change text color to white for better visibility */
+}
+/* Style for the Save button */
+.waitingRoom-page .gptChat .chatarea .save-button {
+  background-color: purple;
+  color: white; /* Optional: change text color to white for better visibility */
+}
+.waitingRoom-page .gptChat .chatarea .chatbox {
+  height: 100%;
+  overflow-y: scroll;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  border: 1px solid white;
+  border-radius: 0.5rem;
+
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.waitingRoom-page .gptChat .chatarea .queryBox {
+  display: flex;
+  align-items: center; /* Aligns children vertically in the middle */
+}
+
+.waitingRoom-page .gptChat .chatarea input,
+.waitingRoom-page .gptChat .chatarea button {
+  height: 2.5rem; /* Example fixed height; adjust as needed */
+  padding: 0.5rem 1rem; /* Padding for aesthetic spacing */
+  /* ... other styles ... */
+}
+
+/* Remove any height: 100%; on the buttons if present to prevent them from stretching */
+.waitingRoom-page .gptChat .chatarea button {
+  /* ... other styles ... */
+  height: 2.5rem; /* Make sure this matches the input height */
+  aspect-ratio: auto; /* Remove or adjust aspect-ratio if it causes layout issues */
+}
+
+.waitingRoom-page .gptChat .chatarea button:active {
+  transform: scale(0.9);
+}
+.waitingRoom-page .gptChat .chatarea .generate-button:hover {
+  background-color: darkblue;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.waitingRoom-page .gptChat .chatarea .save-button:hover {
+  background-color: darkorchid;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.waitingRoom-page .gptChat .chatarea button {
+  color: black;
+  height: 3rem;
+  padding: 1rem;
+  margin-left: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  background-color: white;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.waitingRoom-page .gptChat .chatarea input {
+  height: 3rem;
+  width: 100%;
+  padding: 1rem;
+  /* margin: 1rem; */
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+.waitingRoom-page .gptChat .chatarea .message {
+  padding: 0.5rem;
+  border: 1px solid white;
+  max-width: 50%;
+}
+
+.waitingRoom-page .gptChat .chatarea .chatbot {
+  display: flex;
+  justify-content: start;
+}
+.waitingRoom-page .gptChat .chatarea .chatbot .message {
+  background-color: white;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.waitingRoom-page .gptChat .chatarea .user .message {
+  background-color: rgb(205, 205, 255);
+  border-radius: 0.5rem 0.5rem 0.1rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.waitingRoom-page .gptChat .chatarea .user {
+  justify-content: end;
+  display: flex;
+}
+
+.waitingRoom-page .waiting-stat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem; /* Adjust the top margin as needed */
+}
+
+.waitingRoom-page .waiting-stat .head_text {
+  font-size: 2.5rem; /* Increase the font size */
+  font-weight: bold; /* Make the text bold */
+  color: white; /* Adjust the color if needed */
+  text-align: center;
+  margin-bottom: 1rem; /* Add some space below the title */
+}

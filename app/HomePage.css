@@ -1,0 +1,7 @@
+.centered-image-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Adjust the height as needed */
+  width: 100%; /* Take the full width of the parent */
+}
