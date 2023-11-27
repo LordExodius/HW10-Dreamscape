@@ -27,7 +27,7 @@ export const POST = async (request: Request, res: NextApiResponse) => {
   try {
     // Make the external API request
     const generateImage = await fetch(
-      "http://184.72.65.156:7860/sdapi/v1/txt2img",
+      "PLACEHOLDER",
       {
         method: "POST",
         headers: {
